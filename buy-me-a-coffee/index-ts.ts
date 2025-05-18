@@ -12,7 +12,7 @@ import "viem/window"
 import {
   abi,
   contractAddress,
-} from "./constant-ts";
+} from "./constant-ts.ts";
 
 const connectButton = document.getElementById("connectButton") as HTMLButtonElement;
 const fundButton = document.getElementById("fundButton") as HTMLButtonElement;
