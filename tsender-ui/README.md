@@ -11,4 +11,4 @@ function airdropERC20(
 )
 ```
 
-4. Deploy 2 flick
+4. Deploy to fleek
