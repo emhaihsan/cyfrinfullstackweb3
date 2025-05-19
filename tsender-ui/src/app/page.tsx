@@ -1,5 +1,6 @@
-import Image from "next/image";
+"use client";
+import AirdropForm from "@/components/AirdropForm";
 
 export default function Home() {
-  return <>Hi</>;
+  return <AirdropForm />;
 }

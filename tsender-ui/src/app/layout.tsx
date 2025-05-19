@@ -34,3 +34,4 @@ export default function RootLayout(props: { children: ReactNode }) {
     </html>
   );
 }
+// 7:22
