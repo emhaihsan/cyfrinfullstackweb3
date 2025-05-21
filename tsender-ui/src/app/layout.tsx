@@ -1,19 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ReactNode } from "react";
 import { Providers } from "./providers";
 import { Header } from "@/components/Header";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "TSender",
@@ -23,9 +12,10 @@ export const metadata: Metadata = {
 export default function RootLayout(props: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <head>
+        <link rel="icon" href="/T-Sender.svg" sizes="any" />
+      </head>
+      <body className="bg-zinc-50">
         <Providers>
           <Header />
           {props.children}
@@ -34,4 +24,3 @@ export default function RootLayout(props: { children: ReactNode }) {
     </html>
   );
 }
-// 7:22
